@@ -1,0 +1,11 @@
+- hosts: novikov
+  tasks:
+    -   name: Installing cmatrix
+        sudo: yes
+        apt: pkg=cmatrix state=installed
+    -   name: Installing cowsay
+        sudo: yes
+        apt: pkg=cowsay state=installed
+    -   name: Installing sl
+        sudo: yes
+        apt: pkg=sl state=installed
